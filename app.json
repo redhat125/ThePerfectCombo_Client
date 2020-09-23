@@ -23,6 +23,10 @@
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
+    },
+    "description": "",
+    "android": {
+      "package": "com.redhat125.ThePerfectCombo"
     }
   }
 }

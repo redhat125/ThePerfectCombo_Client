@@ -12,7 +12,7 @@ https://nodejs.org/en/download/
 https://docs.expo.io/get-started/installation/
 
 #instructions:
-clone this repo. go to root directory, change to dev branch (for latest update) and run command:
+clone this repo ( git clone https://github.com/redhat125/ThePerfectCombo_Client.git ). go to root directory, change to dev branch (for latest update) and run command:
 1. npm install
 2. expo start
 

@@ -1,7 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
 import {SCREEN_WIDTH} from '../../constants/constants';
 
-let switchContainerWidth = SCREEN_WIDTH-10;
+let switchContainerWidth = SCREEN_WIDTH-20;
 let switchContainerHeight = SCREEN_WIDTH/10;
 
 const styles = StyleSheet.create({

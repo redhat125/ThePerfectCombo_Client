@@ -87,7 +87,9 @@ const styles = StyleSheet.create({
     margin: 5,
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius:15
+    borderRadius:15,
+    borderColor: '#cccccc',
+    borderWidth: 0.5
   }
 });
 

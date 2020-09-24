@@ -25,6 +25,41 @@ export function getDishDetailsSync(id:string){
     return Object.values(menuData.dish).find((item)=>item.id == id);
 }
 
+export function getItemDetailsSync(dishList:Array<string>){
+    console.log("getting item detail for "+dishList);
+    return menuData.items;
+}
+
+export function getItemListArr(list:Array<any>){
+    console.log("getItemListArr ip "+JSON.stringify(list));
+    let res: Array<string> = [];
+    let finalRes: Array<string> = [];
+    list.forEach((item)=>{
+        if(Array.isArray(item)){
+            const itemList = item.map((opItem)=>{
+                return Object.keys(opItem)[0];
+            })
+            res = [...res, ...itemList];
+        }
+        else{
+            res.push(Object.keys(item)[0]);
+        }
+    });
+
+    res.forEach(item=>{
+        if(!finalRes.includes(item)){{
+            finalRes.push(item);
+        }}
+    })
+
+    console.log("getItemListArr op "+JSON.stringify(finalRes));
+    return finalRes;
+}
+
+export function getProperty<T, K extends keyof T>(o: T, propertyName: K): T[K] {
+    return o[propertyName]; // o[propertyName] is of type T[K]
+}
+
 
 
 

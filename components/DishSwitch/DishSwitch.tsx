@@ -7,16 +7,23 @@ import {
   TouchableOpacity,
   Image,
   Dimensions,
-  TouchableHighlight
+  TouchableHighlight,
+  Animated
 } from 'react-native';
 import styles from './styles';
 
 import { FontAwesome } from '@expo/vector-icons';
 
-export default function DishSwitch({dish}:{dish : any}){
+export default function DishSwitch({name, desc, fixed, animationX, fromGroup, switchPress}:{name : string, desc: string, fixed: boolean, animationX: Animated.Value, fromGroup: string, switchPress: any}){
+  const transformStyle ={
+    transform : [{ 
+      translateX : animationX,
+    }]
+  }
   return(
     <View style={styles.switchContainer}>
       <View style={styles.switchGroup}>
+        
         <View style={[styles.switchInfo, {'left':0}]}>
           <FontAwesome name="lock" size={24} color="black"/>
         </View>
@@ -24,14 +31,18 @@ export default function DishSwitch({dish}:{dish : any}){
         <View style={[styles.switchInfo, {'right':0}]}>
           <FontAwesome name="remove" size={24} color="black"/>
         </View>
+
         
-          <View style={{backgroundColor:'#000'}}>
-            <TouchableOpacity style={styles.switchButton} onPress={()=>console.log("switch")}>
-              <Text>Items</Text>
-            </TouchableOpacity>
-          </View>
+        <Animated.View style={transformStyle} >
+          <TouchableOpacity style={styles.switchButton} 
+          onPress={fixed?switchPress(animationX, fromGroup, fixed):()=>switchPress(animationX, fromGroup, fixed)
+          }>
+            <Text>{name}</Text>
+          </TouchableOpacity>
+        </Animated.View>
         
       </View>
+      <Text style={{fontSize:10, marginBottom:5}}>{desc}</Text>
     </View>
   );
 }

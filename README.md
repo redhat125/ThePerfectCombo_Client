@@ -13,6 +13,6 @@ https://docs.expo.io/get-started/installation/
 
 #instructions:
 go to root directory and run command:
-npm install
-expo start
+1. npm install
+2. expo start
  

@@ -12,7 +12,7 @@ https://nodejs.org/en/download/
 https://docs.expo.io/get-started/installation/
 
 #instructions:
-clone the repo. go to root directory, change to dev branch (for latest update) and run command:
+clone this repo. go to root directory, change to dev branch (for latest update) and run command:
 1. npm install
 2. expo start
 

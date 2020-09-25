@@ -3,7 +3,7 @@ Mobile app of perfect combo
 
 
 
-#installation:
+#installation required:
 
 1. install node
 https://nodejs.org/en/download/

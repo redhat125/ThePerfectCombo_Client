@@ -1,5 +1,5 @@
 # ThePerfectCombo mobile client
-its mobile app of perfect combo
+Mobile app of perfect combo
 
 
 

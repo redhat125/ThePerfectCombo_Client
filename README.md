@@ -1,4 +1,4 @@
-# ThePerfectCombo_Client
+# ThePerfectCombo mobile client
 its mobile app of perfect combo
 
 

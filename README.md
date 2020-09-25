@@ -19,7 +19,7 @@ clone this repo ( git clone https://github.com/redhat125/ThePerfectCombo_Client.
 #This opens page in browser, scan the QR code from expo app in android/iphone, this will launch the app
 
 
-# Happy Coding :)
+# Zindagi barbaad ho giya :P
 
 
 
